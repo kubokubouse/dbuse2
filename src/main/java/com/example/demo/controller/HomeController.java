@@ -41,6 +41,8 @@ public class HomeController
 	    public String index(Model model, User user){
 
 	    	User users=userService.findid(1);
+			System.out.println("動いてる");
+			System.out.println(users.getName());
 
 	    	model.addAttribute("user",users);
 	        return "index";
